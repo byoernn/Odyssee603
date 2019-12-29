@@ -1,0 +1,97 @@
+/*
+define color @lines #333;
+define color @border darkgray;
+*/
+@page {
+    size: A5 landscape;
+}
+body {
+   /* A4 dimensions 
+  width: 210mm;
+  height: 297mm;*/
+  /* A5 dimensions */
+  height: 148.5mm;
+  width: 210mm;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.points{
+  font-size: 8.5px;
+  white-space: pre;
+}
+.container{
+  border-bottom: 1px solid darkgray;
+}
+.container:last-child{
+  border-bottom: none;
+}
+.border-right{
+  border-right: 2px solid darkgray;
+}
+hr{
+  border: 0.5px solid #333;
+}
+label{
+  margin-bottom: 0.25em;
+}
+.character{
+  align-items: stretch;
+  height: 70px;
+}
+.portraet{
+  flex-grow:4;
+}
+.information{
+  flex-grow:6;
+}
+.attributes{
+  padding: 0.25em;
+}
+.attributes table{
+  width: 100%;
+  border-collapse: separate;
+  margin-left: 2em;
+}
+.attributes table td.value{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 8em;
+}
+.attributes table td.value span{
+  border: 1px solid #333;
+  display: inline-block;
+  width: 2em;
+  height: 1em;
+}
+.information table{
+  width: 100%;
+  border-collapse: separate;
+}
+.information table .attr{
+  display: flex;
+  align-items: stretch;
+}
+.information table .attr span{
+  flex-grow: 1;
+}
+.information table .attr .value{
+  border-bottom: 1px solid #333;
+}
+
+.textbox{
+  padding: 0.5em;
+}
+.health{
+  padding-left: 1em;
+  padding: 0.5em;
+}
+.special{
+  padding-left: 1em;
+  padding: 0.5em;
+}
